@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weathering APP</title>
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONT POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Use Font -->
+    <script>tailwind.config ={
+        theme : {
+            extend: {
+                fontFamily: {
+                    poppins: ['Poppins', 'sans-serif'],
+                },
+            },
+        },
+    }</script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+
+
+
+</head>
+<body class="min-h-screen bg-gradient-to-r from-[#c31432] to-[#240b36] grid place-items-center font-poppins">    
+<div class="card border rounded-xl shadow-lg p-6 bg-white/10 grid place-items-center">
+    <div class="search flex items-center justify-center gap-2 mb-10">
+        <input class="text-center px-4 py-2 rounded-xl w-64 bg-white/20 text-white"
+            type="text" 
+            placeholder="Enter City Name" 
+            spellcheck="false">
+        <button class="bg-[#c31432] text-white px-4 py-2 rounded-md"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="weather grid place-items-center">
+        <img src="weather-icons/images/svg/a_1_sunny.svg" class="Weather-icon w-32 h-32 md:w-40 md:h-40 object-contain" alt="Weather icon">
+        <h1 class="temp text-white font-bold mt-2 text-3xl">22°C</h1>
+        <h2 class="city text-white mb-2">Jakarta</h2>
+        <div class="details flex justify-between gap-20 mt-2">
+            <div class="col grid place-items-center">
+                <iframe src="weather-icons/images/svg/d_4_fog.svg" class="mt-2 w-14 h-14 object-contain" alt="Humidity icon"></iframe>  
+                <div class="gird place-items-center mt-5">
+                    <p class="humidity text-white font-bold text-2xl">50%</p>
+                    <p class="text-white ">Humidity</p>
+                </div>
+            </div>
+            <div class="col grid place-items-center">
+                <iframe src="weather-icons/images/svg/f_3_windy.svg" class="w-12 h-12 object-contain" alt="Wind icon"></iframe>
+                <div class="place-items-center mt-5">
+                    <p class="wind text-white font-bold text-2xl">15 Km/h</p>
+                    <p class="text-white ">Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid place-items-center"></div>
+            <p class="mt-10 mb-5 text-white font-bold">By : Palaguna</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html> 
